@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340.14" height="148" viewBox="0 0 340.14 148">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #adbac7;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #444c56;
+      }
+    </style>
+  </defs>
+  <g id="Logo" transform="translate(-524 -455)">
+    <path id="W" class="cls-1" d="M200.24,0,279,148,357.76,0H325.737L279,87.415,232.263,0Zm9.52,148,17.31-32.889L165.62,0H131Z" transform="translate(506.38 455)"/>
+    <path id="A" class="cls-2" d="M157.52,148,78.76,0,0,148Zm-50.2-30.292L78.76,64.912l-27.7,52.8Z" transform="translate(524 455)"/>
+  </g>
+</svg>

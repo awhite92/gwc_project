@@ -1,4 +1,88 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: $bodyFont;
+    font-size: 16px;
+}
+body {
+    overflow: hidden;
+    background-color: $black;
+    color: $lightGray;
+}
+
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+}
+nav {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    #logo {
+        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+        transform: translateY(2rem);
+        @include item-hide();
+        body.loaded & { @include item-show($delay: 0.5, $speed: 1); }
+    }
+
+    #logo_a {
+        transition: all .2s;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+		opacity: 0;
+		transform: translateY(2rem);
+    }
+    ul {
+        margin-top: 3rem;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        @include item-hide();
+        body.loaded & {
+            @include item-show();
+            li {
+                @for $num from 1 through 4 {
+                    &:nth-child(#{$num}) {
+                        animation: slide-up 1000ms ($num * 100) + 500ms $ease-out forwards;
+                    }
+                }
+            }
+        }
+    }
+    a {
+        color: $lightGray;
+        text-decoration: none;
+        font-size: 1.375rem;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        padding: 0.5rem 1.25rem;
+        transition: all 0.2s;
+    }
+    li:nth-child(1) a:hover { color: $purple; }
+    li:nth-child(2) a:hover { color: $orange; }
+    li:nth-child(3) a:hover { color: $blue; }
+    li:nth-child(4) a:hover { color: $green; }
 }

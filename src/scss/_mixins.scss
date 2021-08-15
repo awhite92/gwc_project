@@ -1,0 +1,14 @@
+
+
+@mixin item-show ($delay: 0, $speed: 0.4) {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0,0);
+	transition: all #{$speed}s $ease-out #{$delay}s, visibility 0s #{$delay}s;
+}
+
+@mixin item-hide ($delay: 0, $speed: 0.4) {
+	visibility: hidden;
+	opacity: 0;
+	transition: all #{$speed}s $ease-out #{$delay}s, visibility 0s #{$delay + $speed}s;
+}
