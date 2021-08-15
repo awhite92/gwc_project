@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title>A little bit about me - Aaron White</title>
 	<module href="/components/head.html"></module>
 </head>
 <body>
 	<canvas id="lofiRain"></canvas>
 
-	<nav id="nav">
-		<div id="logo">
-			<svg xmlns="http://www.w3.org/2000/svg" width="340.14" height="148">
-				<g fill-rule="evenodd">
-					<path data-color="#444c56" class="color_1" id="logo_a" d="M157.52 148L78.76 0 0 148zm-50.2-30.292L78.76 64.912l-27.7 52.8z" fill="#444c56"/>
-					<path id="logo_w" d="M182.62 0l78.76 148L340.14 0h-32.023L261.38 87.415 214.643 0zm9.52 148l17.31-32.889L148 0h-34.62z" fill="#adbac7"/>
-				</g>
-			</svg>
-		</div>
+	<div id="main">
+		<nav id="nav">
+			<div id="logo">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 148">
+					<g fill-rule="evenodd">
+						<path id="logo_a" d="M158 148L79 0 0 148zm-51-30L79 65l-28 53z" fill="#444c56"/>
+						<path d="M183 0l78 148L340 0h-32l-47 87-46-87zm9 148l17-33L148 0h-35z" fill="#adbac7"/>
+					</g>
+				</svg>
+			</div>
+	
+			<ul>
+				<li><a data-color="#dcbdfb" href="https://www.instagram.com/aaronwhite.io/">Instagram</a></li>
+				<li><a data-color="#f69d50" href="https://github.com/awhite92">GitHub</a></li>
+				<li><a data-color="#6cb6ff" href="https://www.linkedin.com/in/aaronsw/">LinkedIn</a></li>
+				<li><a data-color="#8ddb8c" href="mailto:me@aaronwhite.io">Contact</a></li>
+			</ul>
+		</nav>
 
-		<ul>
-			<li><a data-color="#dcbdfb" href="https://www.instagram.com/aaronwhite.io/">Instagram</a></li>
-			<li><a data-color="#f69d50" href="https://github.com/awhite92">GitHub</a></li>
-			<li><a data-color="#6cb6ff" href="https://www.linkedin.com/in/aaronsw/">LinkedIn</a></li>
-			<li><a data-color="#8ddb8c" href="mailto:me@aaronwhite.io">Contact</a></li>
-		</ul>
-	</nav>
+		<div id="content">
+			<h1>Hello, my name is Aaron&nbsp;White.</h1>
+			<p>
+				I'm a <a class="color-blue" href='https://github.com/awhite92'>developer</a> by trade with an interest for <a class="color-purple" href="https://www.instagram.com/aaronwhite.io/">photography / videography</a>. I am currently the Web Director at <a class="color-green" href="https://ocozzio.com/">Ocozzio</a>, and was previously a senior developer with <a class="color-orange" href="https://wierstewart.com/">Wier / Stewart</a>.
+			</p>
+	</div>
 
 	<script src="bundle.js" defer async></script>
 </body>
